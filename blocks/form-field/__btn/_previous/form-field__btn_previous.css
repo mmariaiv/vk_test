@@ -1,0 +1,11 @@
+.form-field__btn_previous {
+	all: unset;
+	justify-self: flex-start;
+	transition: color 1s ease-in-out;
+}
+
+.form-field__btn_previous:hover {
+	all: unset;
+	color: #0077ff;
+	transition: color 1s ease-in-out;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formDiscussion</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <h2 class="header__title">Форма бронирования переговорной</h2>
+  </header>
+  <main class="content">
+
+    <section class="form-container">
+      <form name="booking" class="form" novalidate>
+        <fieldset class="form-field form-field_choose-tower-section form-field_on">
+          <div class="form-field__input-container">
+            <label class="form-field__label" for="choose-tower">Выберите башню:
+              <span class="form-field__label-error choose-tower-error"></span>
+            </label>
+            <select class="form-field__item" id="choose-tower" name="choose-tower" required>
+              <option class="option_default" value="" selected disabled>Башня</option>
+              <option value="a-tower">башня А</option>
+              <option value="b-tower">башня Б</option>
+            </select>
+
+            <label for="choose-floor" class="form-field__label">Выберите этаж:
+              <span class="form-field__label-error choose-floor-error"></span>
+            </label>
+            <select class="form-field__item form-field__item_choose-floor" id="choose_floor" name="choose-floor"
+              required>
+              <option value="" class="option_default" selected disabled>Этаж</option>
+            </select>
+          </div>
+
+          <div class="form-field__button-container">
+            <button class="form-field__btn form-field__btn_next form-field__btn_inactive" disabled
+              type="button">Далее</button>
+            <button class="form-field__btn form-field__btn_reset" type="button">Очистить</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-field form-field_choose-room">
+          <button class="form-field__btn form-field__btn_previous" type="button">&larr; Назад</button>
+
+          <div class="form-field__input-container">
+
+            <label for="choose-room" class="form-field__label">Выберите комнату:
+              <span class="form-field__label-error choose-room-error"></span>
+            </label>
+            <select class="form-field__item form-field__item_choose-room" id="choose_room" name="choose-room" required>
+              <option value="" class="option_default" selected disabled>Комната</option>
+            </select>
+
+            <label class="form-field__label" for="booking-date">Дата бронирования:
+              <span class="form-field__label-error booking-date-error"></span>
+            </label>
+            <input type="date" class="form-field__item form-field__item_el_pubdate" id="booking-date"
+              name="booking-date" required>
+          </div>
+
+
+
+          <div class="form-field__button-container">
+
+            <button class="form-field__btn form-field__btn_next form-field__btn_inactive" type="button"
+              disabled>Далее</button>
+            <button class="form-field__btn form-field__btn_reset" type="button">Очистить</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-field form-field_final">
+          <button class="form-field__btn form-field__btn_previous" type="button">&larr; Назад</button>
+
+          <div class="form-field__input-container">
+            <label class="form-field__label" for="comment">Комментарий:
+              <span class="form-field__label-error comment-error"></span>
+            </label>
+            <textarea class="form-field__item form-field__item_comment" id="comment" name="comment"
+              placeholder="Впишите комментарий по поводу деталей бронирования" required minlength="10"></textarea>
+          </div>
+          <div class="form-field__button-container">
+
+            <button class="form-field__btn form-field__btn_next form-field__btn_inactive" disabled
+              type="submit">Отправить</button>
+            <button class="form-field__btn form-field__btn_reset" type="button">Очистить</button>
+          </div>
+        </fieldset>
+
+      </form>
+    </section>
+
+    <section class="final-message final-message_off">
+      <h2 class="final-message__title">Форма успешно отправлена!</h2>
+      <p class="final-message__request">Хотите отправить еще одну?</p>
+      <button class="final-message__reset" type="
+      button">&larr; Начать снова</button>
+
+    </section>
+  </main>
+</body>
+
+
+<script src="./pages/index.js" type="module"></script>
+
+</html>
+
+<!-- <fieldset class="form-field__input-container form-field__input-container_ctrl_visual">
+  <label class="form-field__label" for="font-family">Семейство шрифтов</label>
+  <select class="form-field__item form-field__item_el_font-family" id="font-family" name="font-family">
+    <option value="ibm">IBM Plex Serif</option>
+    <option value="ubuntu">Ubuntu</option>
+    <option value="istok">Istok Web</option>
+  </select>
+  <label class="form-field__label" for="heading-font-size">Размер текста заголовка</label>
+  <input type="number" class="form-field__item form-field__item_el_heading-fontsize" id="heading-font-size" name="heading-font-size"
+    min="24" max="80" value="32">
+  <label class="form-field__label" for="text-font-size">Размер текста абзаца</label>
+  <input type="number" class="form-field__item form-field__item_el_text-fontsize" id="text-font-size" name="text-font-size" min="12"
+    max="40" value="24">
+  <label class="form-field__label" for="pub-date">Дата создания статьи</label>
+  <input type="date" class="form-field__item form-field__item_el_pubdate" id="pub-date" name="pub-date">
+  <label class="form-field__label" for="image">Обложка статьи</label>
+  <select class="form-field__item form-field__item_el_image" id="image" name="image">
+    <option value="bombardier">Bombardier CS300</option>
+    <option value="hobbit">Боинг-777 Хоббит</option>
+    <option value="tiger">Тигролёт</option>
+    <option value="connected">Connected to 01000010 01001100 01010101 01000101</option>
+  </select>
+</fieldset> -->

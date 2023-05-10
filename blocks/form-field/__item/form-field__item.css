@@ -1,0 +1,14 @@
+.form-field__item {
+	all: unset;
+	border: 1px solid #0077ff;
+	padding: 5px;
+	border-radius: 5px;
+	width: 30%;
+	text-align: center;
+	transition: border 0.6s ease-in-out;
+}
+
+.form-field__item:hover {
+	border: 1px solid black;
+	transition: border 1s ease-in-out;
+}

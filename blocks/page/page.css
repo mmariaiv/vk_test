@@ -1,0 +1,14 @@
+.page {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-text-size-adjust: 100%;
+	-ms-font-feature-settings: "kern" 1;
+	font-feature-settings: "kern";
+
+	/* min-width: 1100px; */
+	/* max-width: 1600px; */
+	max-width: 80%;
+	margin: 0 auto;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}

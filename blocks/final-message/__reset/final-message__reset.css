@@ -1,0 +1,22 @@
+.final-message__reset {
+	all: unset;
+	background-color: #0077ff;
+	color: white;
+	font: inherit;
+	width: 20%;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 10px;
+	border-radius: 4px;
+	border: 1px solid #0077ff;
+	transition: color 1s ease-in-out;
+	transition: background-color 1s ease-in-out;
+	align-self: flex-end;
+}
+
+.final-message__reset:hover {
+	background-color: white;
+	color: #0077ff;
+}

@@ -1,0 +1,26 @@
+.form-field__btn {
+	all: unset;
+	background-color: #0077ff;
+	color: white;
+	font: inherit;
+	width: 20%;
+	font-weight: bold;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 10px;
+	border-radius: 4px;
+	display: flex;
+	border: 1px solid #0077ff;
+	transition: color 1s ease-in-out;
+	transition: background-color 1s ease-in-out;
+	/* width: 50%; */
+}
+
+.form-field__btn:hover {
+	color: #0077ff;
+	background-color: white;
+	border: 1px solid #0077ff;
+	border-radius: 4px;
+	cursor: pointer;
+}

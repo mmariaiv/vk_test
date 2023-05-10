@@ -1,0 +1,11 @@
+.option_default {
+	color: gray;
+	cursor: disabled;
+	background-color: white;
+}
+
+.option_default:hover {
+	background-color: white;
+	color: white;
+	cursor: disabled;
+}

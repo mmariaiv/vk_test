@@ -1,0 +1,38 @@
+@import url(..//vendor/normalize.css);
+
+@import url(../blocks/content/content.css);
+
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+
+@import url(../blocks/option/_default/option_default.css);
+
+@import url(../blocks/form-container/form-container.css);
+
+@import url(../blocks/form-field/form-field.css);
+@import url(../blocks/form-field/__button-container/form-field__button-container.css);
+@import url(../blocks/form-field/__input-container/form-field__input-container.css);
+@import url(../blocks/form-field/__item/form-field__item.css);
+@import url(../blocks/form-field/__item/_comment/form-field__item_comment.css);
+@import url(../blocks/form-field/__label/form-field__label.css);
+@import url(../blocks/form-field/_choose-room/form-field_choose-room.css);
+@import url(../blocks/form-field/_choose-tower-section/form-field_choose-tower-section.css);
+@import url(../blocks/form-field/_final/form-field_final.css);
+@import url(../blocks/form-field/_on/form-field_on.css);
+@import url(../blocks/form-field/__btn/form-field__btn.css);
+@import url(../blocks/form-field/__btn/form-field__btn.css);
+@import url(../blocks/form-field/__btn/_previous/form-field__btn_previous.css);
+@import url(../blocks/form-field/__btn/_inactive/form-field__btn_inactive.css);
+@import url(../blocks/form-field/__item-error/form-field__item-error.css);
+@import url(../blocks/form-field/__label-error/form-field__label-error.css);
+
+@import url(../blocks/form/form.css);
+
+@import url(../blocks/final-message/final-message.css);
+
+@import url(../blocks/final-message/__request/final-message__request.css);
+@import url(../blocks/final-message/__reset/final-message__reset.css);
+@import url(../blocks/final-message/__title/final-message__title.css);
+@import url(../blocks/final-message/_off/final-message_off.css);

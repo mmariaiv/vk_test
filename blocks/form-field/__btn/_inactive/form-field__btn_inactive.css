@@ -1,0 +1,14 @@
+.form-field__btn_inactive {
+	cursor: disabled;
+	background-color: gray;
+	border: 1px solid gray;
+}
+
+.form-field__btn_inactive:hover {
+	cursor: disabled;
+	cursor: default;
+	background-color: gray;
+	border: 1px solid gray;
+	transition: none;
+	color: white;
+}
